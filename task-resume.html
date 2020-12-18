@@ -1,0 +1,505 @@
+<style>
+
+
+    *{
+
+        box-sizing: border-box;
+    }
+    .container{
+        width: 1140px;
+        margin:30px auto auto auto;
+        
+    }
+    .name_and_details{
+        background-color: grey;
+    }
+    
+    .name_and_details img{
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        top:30px;
+        margin-left: 520px;
+        position: relative;
+        
+    }
+    .name{
+        
+        top: 0px;
+        left:20px;
+        font-size: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        bottom: 60px;
+        margin-left: 430px;
+        margin-right: 430px;
+        height: 50px;
+        border-radius: 10px;
+        background-color: orange;
+    }
+     
+    
+    h2{
+        font-family: Arial, Helvetica, sans-serif;
+        color:  grey;
+        font-size: 30px;
+    }
+    .intro, .skills{
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        font-size: 20px;
+    }
+    
+    .welcome{
+        
+        margin-top: 1px;
+        border-bottom: 1px solid black;
+    }
+    .welcome_folks{
+        color: grey;
+    }
+    .twelve, .degree, .tenth{
+        color: rgb(199, 39, 178);
+    }
+    .details{
+        padding-top: 40px;
+        padding-left: 50px;
+        width: 50%;
+        float: right;
+        color: black;
+        font-size: 20px;
+    }
+    .insider{
+        padding-right: 30px;
+        width: 50%;
+        float: left;
+        border-right: 2px solid grey;
+    }
+    
+    .areas_interest{
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+    }
+    .bar{
+        background: yellow;
+        display: block;
+        height: 2px;
+        border: 1px solid yellow;
+        border-radius: 3px;
+        overflow: hidden;
+        box-shadow: 0 0 10px yellow;
+    
+    }
+    .wexp, .eveman{
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+    }
+    
+    
+
+</style
+   
+    <body >
+        <script>
+        
+              //container
+                    var container = document.createDocumentFragment();
+                    var zero = document.createElement("div");
+
+                    //title
+                    var one = document.createElement("title");
+                    one.appendChild(document.createTextNode("\nRESUME\n"));
+
+                    //append zero to one
+                    zero.appendChild(one);
+
+                    //link css 
+                    var second = document.createElement("link");
+                    second.setAttribute("rel", "stylesheet");
+                    second.setAttribute("type", "text/css");
+                    second.setAttribute("href", "style_res.css");
+                    zero.appendChild(second);
+
+                    //creating classes
+                    var third = document.createElement("div");
+                    third.setAttribute("class", "container");
+                    var fourth = document.createElement("div");
+                    fourth.setAttribute("class", "name_and_details");
+                    //image
+
+                    var fifth = document.createElement("img");
+                    fifth.setAttribute("src", "index.jpg");
+                    fourth.appendChild(fifth);
+                    //heading
+
+                    var sixth = document.createElement("h1");
+                    sixth.setAttribute("class", "name");
+                    //text node brain dubey
+
+                    sixth.appendChild(document.createTextNode("BRIAN DUDEY"));
+                    var seventh = document.createElement("br");
+                    sixth.appendChild(seventh);
+                    //break
+
+                    var eigth = document.createElement("br");
+                    sixth.appendChild(eigth);
+                    fourth.appendChild(sixth);
+                    third.appendChild(fourth);
+                    // class-welcome
+                     
+                    var nine = document.createElement("div");
+                    nine.setAttribute("class", "welcome");
+                    //class-welcome_folks
+
+                    var ten = document.createElement("h4");
+                    ten.setAttribute("align", "center");
+                    ten.setAttribute("class", "welcome_folks");
+                    ten.appendChild(document.createTextNode("N. Damen Avenue, Chicago 99999 | 999-999-9999 | hello@kickresume.com | www.kickresume.com"));
+                    nine.appendChild(ten);
+                    third.appendChild(nine);
+                    //class-insider
+
+                    var eleven = document.createElement("div");
+                    eleven.setAttribute("class", "insider");
+                    var twelve = document.createElement("h2");
+                    var thirteen = document.createElement("br");
+                    twelve.appendChild(thirteen);
+                    twelve.appendChild(document.createTextNode("Profile"));
+                    eleven.appendChild(twelve);
+                    //class- intro
+
+                    var fourteen = document.createElement("p");
+                    fourteen.setAttribute("class", "intro");
+                    fourteen.appendChild(document.createTextNode("Innovative optimized solution seeker. Excited to be at the deployment phase of my new career as a web developer. I am ambitious, adventurous, assiduous, animated, and an alliteration advocate."));
+                    eleven.appendChild(fourteen);
+                    //skills
+
+
+                    var fifteen = document.createElement("h2");
+                    fifteen.appendChild(document.createTextNode("Skills"));
+                    eleven.appendChild(fifteen);
+                    //class-techskills
+
+
+                    var sixteen = document.createElement("h3");
+                    sixteen.setAttribute("align", "center");
+                    sixteen.setAttribute("class", "techskills");
+                    var seventeen = document.createElement("i");
+                    seventeen.setAttribute("class", "fas fa-certificate");
+                    sixteen.appendChild(seventeen);
+                    //technical skills
+
+
+                    var eighteen = document.createElement("strong");
+                    eighteen.appendChild(document.createTextNode("Technical Skills"));
+                    sixteen.appendChild(eighteen);
+                    eleven.appendChild(sixteen);
+                    //table
+
+
+                    var nineteen = document.createElement("table");
+                    nineteen.setAttribute("class", "skills");
+                    var n20 = document.createElement("tbody");
+                    var n21 = document.createElement("tr");
+                    var n22 = document.createElement("td");
+
+                    n22.appendChild(document.createTextNode("\nJavaScript\n"));
+                    n21.appendChild(n22);
+
+                    var n23 = document.createElement("td");
+                    n21.appendChild(n23);
+                    n20.appendChild(n21);
+                    //n24, 25
+//tr td
+
+                    var n24 = document.createElement("tr");
+                    var n25 = document.createElement("td");
+
+                    n25.appendChild(document.createTextNode("\nCSS\n"));
+
+                    n24.appendChild(n25);
+                    n20.appendChild(n24);
+
+                    var n26 = document.createElement("tr");
+                    var n27 = document.createElement("td");
+
+                    n27.appendChild(document.createTextNode("\nHTML\n"));
+
+                    n26.appendChild(n27);
+                    n20.appendChild(n26);
+
+                    var n28 = document.createElement("tr");
+                    var n29 = document.createElement("td");
+
+                    n29.appendChild(document.createTextNode("\nReact\n"));
+
+                    n28.appendChild(n29);
+                    n20.appendChild(n28);
+
+                    var n30 = document.createElement("tr");
+                    var n31 = document.createElement("td");
+
+                    n31.appendChild(document.createTextNode("\nRedux\n"));
+
+                    n30.appendChild(n31);
+                    n20.appendChild(n30);
+
+                    var n32 = document.createElement("tr");
+                    var n33 = document.createElement("td");
+
+                    n33.appendChild(document.createTextNode("\nMongo\n"));
+
+                    n32.appendChild(n33);
+                    n20.appendChild(n32);
+
+                    var n34 = document.createElement("tr");
+                    var n35 = document.createElement("td");
+
+                    n35.appendChild(document.createTextNode("\nDeployment\n"));
+
+                    n34.appendChild(n35);
+                    n20.appendChild(n34);
+
+                    nineteen.appendChild(n20);
+                    eleven.appendChild(nineteen);
+
+                    var n36 = document.createElement("h3");
+                    n36.setAttribute("align", "center");
+
+                    var n37 = document.createElement("strong");
+                    n37.appendChild(document.createTextNode("Additional Skills"));
+                    n36.appendChild(n37);
+                    eleven.appendChild(n36);
+
+                    var n38 = document.createElement("table");
+                    n38.setAttribute("class", "skills");
+
+                    var n39 = document.createElement("tbody");
+                    var n40 = document.createElement("tr");
+                    var n41 = document.createElement("td");
+
+                    n41.appendChild(document.createTextNode("\nProject Management\n"));
+                    n40.appendChild(n41);
+                    n39.appendChild(n40);
+
+                    var n42 = document.createElement("tr");
+                    var n43 = document.createElement("td");
+
+                    n43.appendChild(document.createTextNode("\nRecruitment\n"));
+
+                    n42.appendChild(n43);
+                    n39.appendChild(n42);
+
+                    var n44 = document.createElement("tr");
+                    var n45 = document.createElement("td");
+
+                    n45.appendChild(document.createTextNode("\nBusiness Development\n"));
+
+                    n44.appendChild(n45);
+                    n39.appendChild(n44);
+
+                    var n46 = document.createElement("tr");
+                    var n47 = document.createElement("td");
+
+                    n47.appendChild(document.createTextNode("\nEditing\n"));
+
+                    n46.appendChild(n47);
+                    n39.appendChild(n46);
+
+                    var n48 = document.createElement("tr");
+                    var n49 = document.createElement("td");
+
+                    n49.appendChild(document.createTextNode("\nFundraising\n"));
+
+                    n48.appendChild(n49);
+                    n39.appendChild(n48);
+                    n38.appendChild(n39);
+
+                    eleven.appendChild(n38);
+                    var n50 = document.createElement("h2");
+
+                    n50.appendChild(document.createTextNode("Work experience"));
+
+                    eleven.appendChild(n50);
+                    var n51 = document.createElement("table");
+                    n51.setAttribute("class", "eveman");
+
+                    var n52 = document.createElement("tbody");
+                    var n53 = document.createElement("tr");
+                    var n54 = document.createElement("td");
+                    var n55 = document.createElement("strong");
+
+                    n55.appendChild(document.createTextNode("Event Manager"));
+                    n54.appendChild(n55);
+                    n53.appendChild(n54);
+
+                    var n56 = document.createElement("td");
+                    n56.appendChild(document.createTextNode("\n03/2014 - 02/2017\n"));
+                    n53.appendChild(n56);
+                    n52.appendChild(n53);
+
+                    var n57 = document.createElement("tr");
+                    var n58 = document.createElement("td");
+
+                    n58.appendChild(document.createTextNode("\nC3 Presents, Washington DC\n"));
+
+                    n57.appendChild(n58);
+                    n52.appendChild(n57);
+                    n51.appendChild(n52);
+                    eleven.appendChild(n51);
+
+                    var n59 = document.createElement("ul");
+                    n59.setAttribute("class", "wexp");
+                    var n60 = document.createElement("li");
+
+                    n60.appendChild(document.createTextNode("\nLead and executes all phases of event planning and production spanning committee recruitment, training, vendor relationships and on-site facilitation.\n"));
+                    n59.appendChild(n60);
+
+                    var n61 = document.createElement("li");
+                    n61.appendChild(document.createTextNode("\nBrought new business to the organization through relentless networking and stewardship which helped the company win the bid for the State Department Summit on the Middle East and, the companies largest civic event to date, the Unites State of Women.\n"));
+                    n59.appendChild(n61);
+
+                    var n62 = document.createElement("li");
+                    n62.appendChild(document.createTextNode("\nExercise fiscal cotrol over budget creation, teacking and reporting. Collaborate with employees at all organizational levels to advance cohesive operations.\n"));
+                    n59.appendChild(n62);
+
+                    eleven.appendChild(n59);
+                    third.appendChild(eleven);
+
+                    var n63 = document.createElement("div");
+                    n63.setAttribute("class", "details");
+
+                    var n64 = document.createElement("h2");
+                    n64.appendChild(document.createTextNode("Work Experience"));
+                    n63.appendChild(n64);
+
+                    var n65 = document.createElement("table");
+                    var n66 = document.createElement("tbody");
+                    var n67 = document.createElement("tr");
+                    var n68 = document.createElement("td");
+                    var n69 = document.createElement("strong");
+
+                    n69.appendChild(document.createTextNode("Community Relations "));
+                    var n70 = document.createElement("br");
+
+                    n69.appendChild(n70);
+                    n69.appendChild(document.createTextNode("Manager"));
+                    n68.appendChild(n69);
+                    n67.appendChild(n68);
+
+                    var n71 = document.createElement("td");
+                    n71.appendChild(document.createTextNode("\n06/2011 - 01/2014\n"));
+                    n67.appendChild(n71);
+                    n66.appendChild(n67);
+
+                    var n72 = document.createElement("tr");
+                    var n73 = document.createElement("td");
+
+                    n73.appendChild(document.createTextNode("\nGay & Lesbian Elder Housing, Los Angeles\n"));
+
+                    n72.appendChild(n73);
+                    n66.appendChild(n72);
+                    n65.appendChild(n66);
+                    n63.appendChild(n65);
+
+                    var n74 = document.createElement("ul");
+                    var n75 = document.createElement("li");
+
+                    n75.appendChild(document.createTextNode("\nArranging presentations and pitch deck.\n"));
+
+                    n74.appendChild(n75);
+                    var n76 = document.createElement("li");
+
+                    n76.appendChild(document.createTextNode("\nDesigning a PR plan and establishing important focus points.\n"));
+                    n74.appendChild(n76);
+
+                    var n77 = document.createElement("li");
+                    n77.appendChild(document.createTextNode("\nDesigning, creating and managing content across multiple communication platforms.\n"));
+                    n74.appendChild(n77);
+
+                    var n78 = document.createElement("li");
+                    n78.appendChild(document.createTextNode("\nBuilding relationships with key media players.\n"));
+                    n74.appendChild(n78);
+                    n63.appendChild(n74);
+
+                    var n79 = document.createElement("h2");
+                    n79.appendChild(document.createTextNode("Education"));
+                    n63.appendChild(n79);
+
+                    var n80 = document.createElement("table");
+                    var n81 = document.createElement("tbody");
+                    var n82 = document.createElement("tr");
+                    var n83 = document.createElement("td");
+                    var n84 = document.createElement("strong");
+
+                    n84.appendChild(document.createTextNode("Engineering Immersion"));
+                    var n85 = document.createElement("br");
+                    n84.appendChild(n85);
+
+                    n84.appendChild(document.createTextNode("Program"));
+                    n83.appendChild(n84);
+
+                    var n86 = document.createElement("br");
+                    n83.appendChild(n86);
+
+                    n83.appendChild(document.createTextNode("Thinful, Chicago, IL\n"));
+                    n82.appendChild(n83);
+
+                    var n87 = document.createElement("td");
+                    n87.appendChild(document.createTextNode("\n11/2018 - 06/2018\n"));
+
+                    n82.appendChild(n87)
+                    n81.appendChild(n82);
+                    n80.appendChild(n81);
+                    n63.appendChild(n80);
+
+                    var n88 = document.createElement("p");
+                    n88.appendChild(document.createTextNode("\nProject-focused intense program with emphasis on Mongo, Express, React and JavaScript (MERN) technical stack.\n"));
+                    n63.appendChild(n88);
+
+                    var n89 = document.createElement("ul");
+                    var n90 = document.createElement("li");
+                    n90.appendChild(document.createTextNode("\nDeveloped a full-stack web application, \"RenewU\", using React that allows users to explore various aspects of meditation. User's progress is stored on a backend created using Node and MongoDB.\n"));
+                    n89.appendChild(n90);
+
+                    var n91 = document.createElement("li");
+                    n91.appendChild(document.createTextNode("\nDeveloped a language learning app, \"Foodie Phonetics\" using spaced repitition and a linked list data structure. React was used to create the front end components while Node and Mongo were used to create the backend that stores user data.\n"));
+                    n89.appendChild(n91);
+
+                    var n92 = document.createElement("li");
+                    n92.appendChild(document.createTextNode("\nDeveloped a concierge app, \"Pley\", for individuals looking for curated suggestions whn visiting a new place. React was used to develop the front end which includdes real-time chat, drag and drop and variety of advanced features. The backend, buitl using Node, Express and Mongo, takes advantage of well-developed RESTful API, Geospatial searching, and user authentication with JWT.\n"));
+                    n89.appendChild(n92);
+                    n63.appendChild(n89);
+
+                    var n93 = document.createElement("table");
+                    var n94 = document.createElement("tbody");
+                    var n95 = document.createElement("tr");
+                    var n96 = document.createElement("td");
+                    var n97 = document.createElement("strong");
+                    n97.appendChild(document.createTextNode("BA, English"));
+
+                    n96.appendChild(n97);
+                    var n98 = document.createElement("br");
+                    n96.appendChild(n98);
+                    n96.appendChild(document.createTextNode("University of California, Los Angeles\n"));
+                    n95.appendChild(n96);
+                    n94.appendChild(n95);
+
+                    var n99 = document.createElement("tr");
+                    var n100 = document.createElement("td");
+
+                    n100.appendChild(document.createTextNode("\n09/2001 - 09/2005\n"));
+                    n99.appendChild(n100);
+                    n94.appendChild(n99);
+                    n93.appendChild(n94);
+                    n63.appendChild(n93);
+                    third.appendChild(n63);
+                    zero.appendChild(third);
+                    document.body.appendChild(zero);
+                  
+                    
+            </script>
+        </body>
+            
